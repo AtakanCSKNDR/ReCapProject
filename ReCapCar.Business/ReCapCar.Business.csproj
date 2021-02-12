@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReCapCar.DataAccess\ReCapCar.DataAccess.csproj" />
+    <ProjectReference Include="..\ReCapCar.Entities\ReCapCar.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
