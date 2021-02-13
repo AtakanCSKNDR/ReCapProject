@@ -1,5 +1,7 @@
 ﻿using ReCapCar.Business.Concreate;
+using ReCapCar.ConsoleUI.Controllers;
 using ReCapCar.DataAccess.Concreate.EntityFramework;
+using ReCapCar.Entities.Concreate;
 using System;
 
 namespace ReCapCar.ConsoleUI
@@ -8,36 +10,12 @@ namespace ReCapCar.ConsoleUI
     {
         static void Main(string[] args)
         {
-            //GetCar();
-            //GetBrands();
-            GetColors();
-        }
+            CarsController carsController = new CarsController();
+            carsController.GetCarDetails();
 
-        private static void GetColors()
-        {
-            ColorManager colorManager = new ColorManager(new EfColorDal());
-            foreach (var item in colorManager.GetAll())
-            {
-                Console.WriteLine(item.Name);
-            }
-        }
+            //BrandsController brandsController = new BrandsController();
 
-        private static void GetBrands()
-        {
-            BrandManager brandManager = new BrandManager(new EfBrandDal());
-            foreach (var item in brandManager.GetAll())
-            {
-                Console.WriteLine(item.Name);
-            }
-        }
-
-        private static void GetCar()
-        {
-            CarManager carManager = new CarManager(new EfCarDal());
-            foreach (var item in carManager.GetAllByBrandId(1))
-            {
-                Console.WriteLine(item.Id);
-            }
+            //brandsController.GetBrands();
         }
     }
 }

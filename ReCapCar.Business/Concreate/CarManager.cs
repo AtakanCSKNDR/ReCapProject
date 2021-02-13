@@ -1,6 +1,7 @@
 ﻿using ReCapCar.Business.Abstract;
 using ReCapCar.DataAccess.Abstract;
 using ReCapCar.Entities.Concreate;
+using ReCapCar.Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,12 @@ namespace ReCapCar.Business.Concreate
         {
             return _carDal.Get(car => car.Id == id);
         }
+
+        public List<CarDetailDto> GetCarDetails()
+        {
+            return _carDal.GetCarDetails();
+        }
+
         public void Update(Car car)
         {
             _carDal.Update(car);
