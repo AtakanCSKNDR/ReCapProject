@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NSwag.AspNetCore" Version="13.10.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ReCapCar.Business\ReCapCar.Business.csproj" />
     <ProjectReference Include="..\ReCapCar.Core\ReCapCar.Core.csproj" />
     <ProjectReference Include="..\ReCapCar.DataAccess\ReCapCar.DataAccess.csproj" />

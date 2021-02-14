@@ -19,6 +19,7 @@ namespace ReCapCar.API
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -32,6 +33,12 @@ namespace ReCapCar.API
             services.AddControllers();
             services.AddSingleton<ICarService, CarManager>();
             services.AddSingleton<ICarDal, EfCarDal>();
+            services.AddSingleton<IBrandDal, EfBrandDal>();
+            services.AddSingleton<IBrandService, BrandManager>();
+            services.AddSingleton<IColorDal, EfColorDal>();
+            services.AddSingleton<IColorService, ColorManager>();
+            services.AddSwaggerDocument();
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,7 +51,10 @@ namespace ReCapCar.API
 
             app.UseHttpsRedirection();
 
+            app.UseCors(MyAllowSpecificOrigins);
             app.UseRouting();
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             app.UseAuthorization();
 
