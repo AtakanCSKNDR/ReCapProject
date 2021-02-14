@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReCapCar.Business\ReCapCar.Business.csproj" />
+    <ProjectReference Include="..\ReCapCar.Core\ReCapCar.Core.csproj" />
+    <ProjectReference Include="..\ReCapCar.DataAccess\ReCapCar.DataAccess.csproj" />
+    <ProjectReference Include="..\ReCapCar.Entities\ReCapCar.Entities.csproj" />
+  </ItemGroup>
+
+
+</Project>

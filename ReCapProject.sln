@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReCapCar.Business", "ReCapC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReCapCar.ConsoleUI", "ReCapCar.ConsoleUI\ReCapCar.ConsoleUI.csproj", "{5E09E001-E76C-4985-9A03-5B84624807CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReCapCar.API", "ReCapCar.API\ReCapCar.API.csproj", "{DBD0319E-6077-4DDF-B18D-77DD3543296C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReCapCar.API", "ReCapCar.API\ReCapCar.API.csproj", "{2949A497-74B1-408E-A347-7A33CD7A4C2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{5E09E001-E76C-4985-9A03-5B84624807CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E09E001-E76C-4985-9A03-5B84624807CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E09E001-E76C-4985-9A03-5B84624807CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBD0319E-6077-4DDF-B18D-77DD3543296C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBD0319E-6077-4DDF-B18D-77DD3543296C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBD0319E-6077-4DDF-B18D-77DD3543296C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBD0319E-6077-4DDF-B18D-77DD3543296C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2949A497-74B1-408E-A347-7A33CD7A4C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2949A497-74B1-408E-A347-7A33CD7A4C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2949A497-74B1-408E-A347-7A33CD7A4C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2949A497-74B1-408E-A347-7A33CD7A4C2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
