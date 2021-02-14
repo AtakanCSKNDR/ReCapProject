@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReCapCar.Entities", "ReCapCar.Entities\ReCapCar.Entities.csproj", "{F9E8DD2B-AFC1-47D6-B908-BB0CC439BBAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReCapCar.Entities", "ReCapCar.Entities\ReCapCar.Entities.csproj", "{F9E8DD2B-AFC1-47D6-B908-BB0CC439BBAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReCapCar.DataAccess", "ReCapCar.DataAccess\ReCapCar.DataAccess.csproj", "{69F72974-1ECB-4560-8D3E-6B85B10B51F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReCapCar.DataAccess", "ReCapCar.DataAccess\ReCapCar.DataAccess.csproj", "{69F72974-1ECB-4560-8D3E-6B85B10B51F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReCapCar.Core", "ReCapCar.Core\ReCapCar.Core.csproj", "{24AEAED6-DD9C-4780-816B-40DFA4043D0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReCapCar.Core", "ReCapCar.Core\ReCapCar.Core.csproj", "{24AEAED6-DD9C-4780-816B-40DFA4043D0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReCapCar.Business", "ReCapCar.Business\ReCapCar.Business.csproj", "{D28F810D-5A1F-466B-B754-413749FF1CC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReCapCar.Business", "ReCapCar.Business\ReCapCar.Business.csproj", "{D28F810D-5A1F-466B-B754-413749FF1CC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReCapCar.ConsoleUI", "ReCapCar.ConsoleUI\ReCapCar.ConsoleUI.csproj", "{5E09E001-E76C-4985-9A03-5B84624807CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReCapCar.ConsoleUI", "ReCapCar.ConsoleUI\ReCapCar.ConsoleUI.csproj", "{5E09E001-E76C-4985-9A03-5B84624807CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReCapCar.API", "ReCapCar.API\ReCapCar.API.csproj", "{DBD0319E-6077-4DDF-B18D-77DD3543296C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5E09E001-E76C-4985-9A03-5B84624807CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E09E001-E76C-4985-9A03-5B84624807CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E09E001-E76C-4985-9A03-5B84624807CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD0319E-6077-4DDF-B18D-77DD3543296C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD0319E-6077-4DDF-B18D-77DD3543296C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD0319E-6077-4DDF-B18D-77DD3543296C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD0319E-6077-4DDF-B18D-77DD3543296C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
