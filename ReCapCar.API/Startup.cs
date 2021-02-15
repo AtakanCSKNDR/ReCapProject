@@ -31,14 +31,22 @@ namespace ReCapCar.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<ICarService, CarManager>();
-            services.AddSingleton<ICarDal, EfCarDal>();
-            services.AddSingleton<IBrandDal, EfBrandDal>();
+            services.AddSingleton<ICustomerService, CustomerManager>();
             services.AddSingleton<IBrandService, BrandManager>();
-            services.AddSingleton<IColorDal, EfColorDal>();
             services.AddSingleton<IColorService, ColorManager>();
+            services.AddSingleton<IUserService, UserManager>();
+            services.AddSingleton<ICarService, CarManager>(); 
+            services.AddSingleton<IRentalService, RentalManager>();
+
+            services.AddSingleton<ICustomerDal, EfCustomerDal>();
+            services.AddSingleton<IBrandDal, EfBrandDal>();
+            services.AddSingleton<IColorDal, EfColorDal>();
+            services.AddSingleton<IUserDal, EfUserDal>();
+            services.AddSingleton<ICarDal, EfCarDal>();
+            services.AddSingleton<IRentalDal, EfRentalDal>();
+
             services.AddSwaggerDocument();
-           
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

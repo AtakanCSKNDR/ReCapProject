@@ -16,5 +16,14 @@ namespace ReCapCar.Business.Constants
         public static string ColorAdded = "Color Added";
         public static string ColorDeleted = "Color Deleted";
         public static string ColorUpdated = "Color Updated";
+        public static string UserAdded = "User Added";
+        public static string UserDeleted = "User Deleted";
+        public static string UserUpdated = "User Updated";
+        public static string CustomerAdded = "Customer Added";
+        public static string CustomerDeleted = "Customer Deleted";
+        public static string CustomerUpdated = "Customer Updated";
+        public static string RentalAdded = "Rental Added";
+        public static string RentalDeleted = "Rental Deleted";
+        public static string RentalUpdated = "Rental Updated";
     }
 }
