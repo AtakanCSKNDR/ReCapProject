@@ -48,7 +48,7 @@ namespace ReCapCar.Business.Concreate
         {
             if (_carDal.GetAll() == null)
             {
-                return new SuccessDataResult<List<Car>>(_carDal.GetAll(), Messages.NotExist);
+                return new SuccessDataResult<List<Car>>(Messages.NotExist);
             }
             return new SuccessDataResult<List<Car>>(_carDal.GetAll() , Messages.Success);
         }
@@ -57,7 +57,7 @@ namespace ReCapCar.Business.Concreate
         {
             if (_carDal.Get(car => car.BrandId == id) == null)
             {
-                return new ErrorDataResult<List<Car>>(_carDal.GetAll(car => car.BrandId == id), Messages.NotExist);
+                return new ErrorDataResult<List<Car>>(Messages.NotExist);
             }
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(car => car.BrandId == id),  Messages.Success);
         }
@@ -66,7 +66,7 @@ namespace ReCapCar.Business.Concreate
         {
             if (_carDal.Get(car => car.ColorId == id) == null)
             {
-                return new ErrorDataResult<List<Car>>(_carDal.GetAll(car => car.ColorId == id), Messages.NotExist);
+                return new ErrorDataResult<List<Car>>(Messages.NotExist);
             }
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(car => car.ColorId == id) , Messages.Success);
         }
@@ -75,7 +75,7 @@ namespace ReCapCar.Business.Concreate
         {
             if (_carDal.Get(car => car.Id == id) == null)
             {
-                return new ErrorDataResult<Car>(_carDal.Get(car => car.Id == id), Messages.NotExist);
+                return new ErrorDataResult<Car>(Messages.NotExist);
             }
             return new SuccessDataResult<Car>(_carDal.Get(car => car.Id == id) , Messages.Success);
         }
@@ -84,7 +84,7 @@ namespace ReCapCar.Business.Concreate
         {
             if (_carDal.GetCarDetails() == null)
             {
-                return new ErrorDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(), Messages.NotExist);
+                return new ErrorDataResult<List<CarDetailDto>>(Messages.NotExist);
             }
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(), Messages.Success);
         }

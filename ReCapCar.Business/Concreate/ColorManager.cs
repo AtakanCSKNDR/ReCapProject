@@ -33,7 +33,7 @@ namespace ReCapCar.Business.Concreate
         {
             if (_colorDal.GetAll() == null)
             {
-                return new ErrorDataResult<List<Color>>(_colorDal.GetAll(), Messages.NotExist);
+                return new ErrorDataResult<List<Color>>(Messages.NotExist);
             }
             return new SuccessDataResult<List<Color>>(_colorDal.GetAll() , Messages.Success);
 
@@ -43,7 +43,7 @@ namespace ReCapCar.Business.Concreate
         {
             if (_colorDal.Get(color => color.Id == id) == null)
             {
-                return new ErrorDataResult<Color>(_colorDal.Get(color => color.Id == id), Messages.NotExist);
+                return new ErrorDataResult<Color>(Messages.NotExist);
             }
             return new SuccessDataResult<Color>(_colorDal.Get(color => color.Id == id) , Messages.Success);
         }

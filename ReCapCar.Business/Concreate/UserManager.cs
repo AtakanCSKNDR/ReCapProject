@@ -32,12 +32,20 @@ namespace ReCapCar.Business.Concreate
 
         public IDataResult<List<User>> GetAll()
         {
-            return new SuccessDataResult<List<User>>(_userDal.GetAll());
+            if (_userDal.GetAll() == null)
+            {
+                return new ErrorDataResult<List<User>>(Messages.NotExist);
+            }
+            return new SuccessDataResult<List<User>>(_userDal.GetAll() , Messages.Success);
         }
 
         public IDataResult<User> GetById(int id)
         {
-            return new SuccessDataResult<User>(_userDal.Get(u => u.Id == id));
+            if (_userDal.Get(u => u.Id == id ) == null )
+            {
+                return new ErrorDataResult<User>(Messages.NotExist);
+            }
+            return new SuccessDataResult<User>(_userDal.Get(u => u.Id == id) , Messages.Success);
         }
 
         public IResult Update(User user)

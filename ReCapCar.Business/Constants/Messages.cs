@@ -29,5 +29,6 @@ namespace ReCapCar.Business.Constants
         public static string RentalUpdated = "Rental Updated";
         public static string BrandOrColorNotExist = "Brand or Color not exist";
         public static string DailyPriceMustBeGreaterThanZero = "Daily price must be greater than '0' ";
+        public static string CarAlreadyRented = "Car already rented";
     }
 }
