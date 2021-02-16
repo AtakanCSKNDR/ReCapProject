@@ -6,7 +6,7 @@
 
 Çok katmanlı kurumsal mimaride hazırlanmış bir günlük araba kiralama projesidir. 
 
-Tabloları oluşturmak için gerekli [SQL](https://github.com/AtakanCSKNDR/ReCapProject/ReCapCar.sql) dosyası.
+Tabloları oluşturmak için gerekli [SQL](https://github.com/AtakanCSKNDR/ReCapProject/blob/master/ReCapCar.sql) dosyası.
 
 ## 1 - Katmanlar
 
