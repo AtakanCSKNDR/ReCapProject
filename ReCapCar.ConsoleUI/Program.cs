@@ -10,8 +10,8 @@ namespace ReCapCar.ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarsController carsController = new CarsController();
-            carsController.GetCarDetails();
+            //CarsController carsController = new CarsController();
+            //carsController.GetCarDetails();
 
             //BrandsController brandsController = new BrandsController();
 
