@@ -31,13 +31,21 @@ namespace ReCapCar.Business.Concreate
 
         public IDataResult<List<Color>> GetAll()
         {
-            return new SuccessDataResult<List<Color>>(_colorDal.GetAll());
+            if (_colorDal.GetAll() == null)
+            {
+                return new ErrorDataResult<List<Color>>(_colorDal.GetAll(), Messages.NotExist);
+            }
+            return new SuccessDataResult<List<Color>>(_colorDal.GetAll() , Messages.Success);
 
         }
 
         public IDataResult<Color> GetById(int id)
         {
-            return new SuccessDataResult<Color>(_colorDal.Get(color => color.Id == id));
+            if (_colorDal.Get(color => color.Id == id) == null)
+            {
+                return new ErrorDataResult<Color>(_colorDal.Get(color => color.Id == id), Messages.NotExist);
+            }
+            return new SuccessDataResult<Color>(_colorDal.Get(color => color.Id == id) , Messages.Success);
         }
 
         public IResult Update(Color color)
