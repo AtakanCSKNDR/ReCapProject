@@ -6,6 +6,8 @@ namespace ReCapCar.Business.Constants
 {
     public class Messages
     {
+        public static string Success = "Success";
+        public static string NotExist = "Record Not Exist";
         public static string CarAdded = "Car added";
         public static string InvalidParameter = "InvalidParameter";
         public static string CarDeleted = "Car Deleted";
@@ -25,5 +27,7 @@ namespace ReCapCar.Business.Constants
         public static string RentalAdded = "Rental Added";
         public static string RentalDeleted = "Rental Deleted";
         public static string RentalUpdated = "Rental Updated";
+        public static string BrandOrColorNotExist = "Brand or Color not exist";
+        public static string DailyPriceMustBeGreaterThanZero = "Daily price must be greater than '0' ";
     }
 }
