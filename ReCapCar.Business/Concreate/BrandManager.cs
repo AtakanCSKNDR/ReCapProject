@@ -31,17 +31,28 @@ namespace ReCapCar.Business.Concreate
 
         public IDataResult<List<Brand>> GetAll()
         {
-
-            return new SuccessDataResult<List<Brand>>(_brandDal.GetAll());
+            if (_brandDal.GetAll() == null)
+            {
+                return new ErrorDataResult<List<Brand>>(_brandDal.GetAll(), Messages.NotExist);
+            }
+            return new SuccessDataResult<List<Brand>>(_brandDal.GetAll() , Messages.Success);
         }
 
         public IDataResult<Brand>GetById(int id)
         {
-            return new SuccessDataResult<Brand>(_brandDal.Get(brand => brand.Id == id));
+            if (_brandDal.Get(brand => brand.Id == id) == null)
+            {
+                return new ErrorDataResult<Brand>(_brandDal.Get(brand => brand.Id == id), Messages.NotExist);
+            }
+            return new SuccessDataResult<Brand>(_brandDal.Get(brand => brand.Id == id) , Messages.Success);
         }
 
         public IResult Update(Brand brand)
         {
+            if (_brandDal.Get(x => x.Id == brand.Id) == null)
+            {
+                return new ErrorResult(Messages.NotExist);
+            }
             _brandDal.Update(brand);
             return new SuccessResult(Messages.BrandUpdated);
         }
