@@ -45,7 +45,10 @@ namespace ReCapCar.API
             services.AddSingleton<ICarDal, EfCarDal>();
             services.AddSingleton<IRentalDal, EfRentalDal>();
 
-            services.AddSwaggerDocument();
+            services.AddSwaggerDocument(settings =>
+            {
+                settings.Title = "Rental Car";
+            });
 
         }
 

@@ -10,19 +10,19 @@ Tabloları oluşturmak için gerekli [SQL](https://github.com/AtakanCSKNDR/ReCap
 
 ## 1 - Katmanlar
 
-#### Entities(1.1)
+### -Entities(1.1)
 
 Veritabanı tablolarına denk gelen entitylerin API, Console veya UI projeleri için kullanılan request/response modellerinin ve DTO(Data transfer object) larının bulunduğu katmandır
 
-#### DataAccess(1.2)
+### -DataAccess(1.2)
 
 Veri erişim katmanıdır. Veritabanı işlemlerinin (CRUD Operations) gerçekleştirildiği katmandır.
 
-#### Bussiness(1.3)
+### -Bussiness(1.3)
 
 İş kodlarımızı bu katmanda yazıyoruz. DataAccess in veritabanından aldığı verileri işleyip kontrolden geçiren katmandır.
 
-#### Presentation Layer(1.4)
+### -Presentation Layer(1.4)
 
 Verilerin gösterilecegi katmandır. Bu bir API olabilir yada bir Console. Bizim projemizde ConsoleUI ve API katmanları mevcut dilediğinizi başlangıç projesi olarak seçip ayaga kaldırabilirsiniz.
 
@@ -100,3 +100,15 @@ CREATE TABLE [dbo].[Users] (
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 ```
+
+## 3 - Eklentiler
+
+### -Swagger (3.1)
+
+Swagger bize hem API endpointlerimizi test etmemize olanak sağlıyor hemde yazdıgımız Controllers lar için bir dökümantasyon oluşturuyor. Bir yazılım geliştirme sürecinde yapılan işin dökümante edilebilmesi en önemli husulardan.
+
+
+
+<p align="center">
+<img width="100%" src="https://user-images.githubusercontent.com/50195250/108074232-05c43d80-707a-11eb-8a54-7c963228ce74.PNG">
+</p>
