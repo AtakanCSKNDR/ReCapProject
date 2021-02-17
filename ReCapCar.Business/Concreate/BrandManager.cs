@@ -1,5 +1,8 @@
-﻿using ReCapCar.Business.Abstract;
+﻿using FluentValidation;
+using ReCapCar.Business.Abstract;
 using ReCapCar.Business.Constants;
+using ReCapCar.Business.ValidationRules.FluentValidation;
+using ReCapCar.Core.CrossCuttingConcerns.Validation;
 using ReCapCar.Core.Utilities.Results.Abstract;
 using ReCapCar.Core.Utilities.Results.Concreate;
 using ReCapCar.DataAccess.Abstract;
@@ -19,6 +22,7 @@ namespace ReCapCar.Business.Concreate
         }
         public IResult Add(Brand brand)
         {
+            ValidationTool.Validate(new BrandValidator(), brand);
             _brandDal.Add(brand);
             return new SuccessResult(Messages.BrandAdded);
         }
